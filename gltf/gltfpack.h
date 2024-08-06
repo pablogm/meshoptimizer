@@ -24,271 +24,272 @@
 
 struct Attr
 {
-	float f[4];
+    float f[4];
 };
 
 struct Stream
 {
-	cgltf_attribute_type type;
-	int index;
-	int target; // 0 = base mesh, 1+ = morph target
+    cgltf_attribute_type type;
+    int index;
+    int target; // 0 = base mesh, 1+ = morph target
 
-	const char* custom_name; // only valid for cgltf_attribute_type_custom
+    const char* custom_name; // only valid for cgltf_attribute_type_custom
 
-	std::vector<Attr> data;
+    std::vector<Attr> data;
 };
 
 struct Transform
 {
-	float data[16];
+    float data[16];
 };
 
 struct Mesh
 {
-	int scene;
-	std::vector<cgltf_node*> nodes;
-	std::vector<Transform> instances;
+    int scene;
+    std::vector<cgltf_node*> nodes;
+    std::vector<Transform> instances;
 
-	cgltf_material* material;
-	cgltf_skin* skin;
+    cgltf_material* material;
+    cgltf_skin* skin;
 
-	cgltf_primitive_type type;
+    cgltf_primitive_type type;
 
-	std::vector<Stream> streams;
-	std::vector<unsigned int> indices;
+    std::vector<Stream> streams;
+    std::vector<unsigned int> indices;
 
-	size_t targets;
-	std::vector<float> target_weights;
-	std::vector<const char*> target_names;
+    size_t targets;
+    std::vector<float> target_weights;
+    std::vector<const char*> target_names;
 
-	std::vector<cgltf_material_mapping> variants;
+    std::vector<cgltf_material_mapping> variants;
 };
 
 struct Track
 {
-	cgltf_node* node;
-	cgltf_animation_path_type path;
+    cgltf_node* node;
+    cgltf_animation_path_type path;
 
-	bool constant;
-	bool dummy;
+    bool constant;
+    bool dummy;
 
-	size_t components; // 1 unless path is cgltf_animation_path_type_weights
+    size_t components; // 1 unless path is cgltf_animation_path_type_weights
 
-	cgltf_interpolation_type interpolation;
+    cgltf_interpolation_type interpolation;
 
-	std::vector<float> time; // empty for resampled or constant animations
-	std::vector<Attr> data;
+    std::vector<float> time; // empty for resampled or constant animations
+    std::vector<Attr> data;
 };
 
 struct Animation
 {
-	const char* name;
+    const char* name;
 
-	float start;
-	int frames;
+    float start;
+    int frames;
 
-	std::vector<Track> tracks;
+    std::vector<Track> tracks;
 };
 
 enum TextureKind
 {
-	TextureKind_Generic,
-	TextureKind_Color,
-	TextureKind_Normal,
-	TextureKind_Attrib,
+    TextureKind_Generic,
+    TextureKind_Color,
+    TextureKind_Normal,
+    TextureKind_Attrib,
 
-	TextureKind__Count
+    TextureKind__Count
 };
 
 enum TextureMode
 {
-	TextureMode_Raw,
-	TextureMode_ETC1S,
-	TextureMode_UASTC,
+    TextureMode_Raw,
+    TextureMode_ETC1S,
+    TextureMode_UASTC,
 };
 
 struct Settings
 {
-	int pos_bits;
-	int tex_bits;
-	int nrm_bits;
-	int col_bits;
+    int pos_bits;
+    int tex_bits;
+    int nrm_bits;
+    int col_bits;
 
-	bool pos_normalized;
-	bool pos_float;
-	bool tex_float;
-	bool nrm_float;
+    bool pos_normalized;
+    bool pos_float;
+    bool tex_float;
+    bool nrm_float;
 
-	int trn_bits;
-	int rot_bits;
-	int scl_bits;
+    int trn_bits;
+    int rot_bits;
+    int scl_bits;
 
-	int anim_freq;
-	bool anim_const;
+    int anim_freq;
+    bool anim_const;
 
-	bool keep_nodes;
-	bool keep_materials;
-	bool keep_extras;
-	bool keep_attributes;
+    bool keep_nodes;
+    bool keep_materials;
+    bool keep_extras;
+    bool keep_attributes;
 
-	bool mesh_merge;
-	bool mesh_instancing;
+    bool mesh_merge;
+    bool mesh_instancing;
 
-	float simplify_threshold;
-	bool simplify_aggressive;
-	bool simplify_lock_borders;
-	bool simplify_attributes;
-	float simplify_debug;
+    float simplify_threshold;
+    bool simplify_aggressive;
+    bool simplify_lock_borders;
+    bool simplify_attributes;
+    float simplify_debug;
 
-	int meshlet_debug;
+    int meshlet_debug;
 
-	bool texture_ktx2;
-	bool texture_embed;
-	bool texture_ref;
+    bool texture_ktx2;
+    bool texture_embed;
+    bool texture_ref;
 
-	bool texture_pow2;
-	bool texture_flipy;
-	float texture_scale;
-	int texture_limit;
+    bool texture_pow2;
+    bool texture_flipy;
+    float texture_scale;
+    int texture_limit;
 
-	TextureMode texture_mode[TextureKind__Count];
-	int texture_quality[TextureKind__Count];
+    TextureMode texture_mode[TextureKind__Count];
+    int texture_quality[TextureKind__Count];
 
-	int texture_jobs;
+    int texture_jobs;
 
-	bool quantize;
+    bool quantize;
 
-	bool compress;
-	bool compressmore;
-	bool fallback;
+    bool compress;
+    bool compressmore;
+    bool fallback;
 
-	int verbose;
+    int verbose;
 };
 
 struct QuantizationPosition
 {
-	float offset[3];
-	float scale;
-	int bits;
-	bool normalized;
+    float offset[3];
+    float scale;
+    int bits;
+    bool normalized;
 
-	float node_scale; // computed from scale/bits/normalized
+    float node_scale; // computed from scale/bits/normalized
 };
 
 struct QuantizationTexture
 {
-	float offset[2];
-	float scale[2];
-	int bits;
-	bool normalized;
+    float offset[2];
+    float scale[2];
+    int bits;
+    bool normalized;
 };
 
 struct StreamFormat
 {
-	enum Filter
-	{
-		Filter_None = 0,
-		Filter_Oct = 1,
-		Filter_Quat = 2,
-		Filter_Exp = 3,
-	};
+    enum Filter
+    {
+        Filter_None = 0,
+        Filter_Oct = 1,
+        Filter_Quat = 2,
+        Filter_Exp = 3,
+    };
 
-	cgltf_type type;
-	cgltf_component_type component_type;
-	bool normalized;
-	size_t stride;
-	Filter filter;
+    cgltf_type type;
+    cgltf_component_type component_type;
+    bool normalized;
+    size_t stride;
+    Filter filter;
 };
 
 struct NodeInfo
 {
-	int scene;
+    int scene;
 
-	bool keep;
-	bool animated;
+    bool keep;
+    bool animated;
 
-	unsigned int animated_path_mask;
+    unsigned int animated_path_mask;
 
-	int remap;
+    int remap;
 
-	std::vector<size_t> mesh_nodes;
+    std::vector<size_t> mesh_nodes;
 
-	bool has_mesh;
-	size_t mesh_index;
-	cgltf_skin* mesh_skin;
+    bool has_mesh;
+    size_t mesh_index;
+    cgltf_skin* mesh_skin;
 };
 
 struct MaterialInfo
 {
-	bool keep;
+    bool keep;
 
-	bool uses_texture_transform;
-	bool needs_tangents;
-	bool unlit;
+    bool uses_texture_transform;
+    bool needs_tangents;
+    bool unlit;
 
-	unsigned int texture_set_mask;
+    unsigned int texture_set_mask;
 
-	int remap;
+    int remap;
 };
 
 struct TextureInfo
 {
-	bool keep;
+    bool keep;
 
-	int remap;
+    int remap;
 };
 
 struct ImageInfo
 {
-	TextureKind kind;
-	bool normal_map;
-	bool srgb;
+    TextureKind kind;
+    bool normal_map;
+    bool srgb;
 
-	int channels;
+    int channels;
 };
 
 struct ExtensionInfo
 {
-	const char* name;
+    const char* name;
 
-	bool used;
-	bool required;
+    bool used;
+    bool required;
 };
 
 struct BufferView
 {
-	enum Kind
-	{
-		Kind_Vertex,
-		Kind_Index,
-		Kind_Skin,
-		Kind_Time,
-		Kind_Keyframe,
-		Kind_Instance,
-		Kind_Image,
-		Kind_Count
-	};
+    enum Kind
+    {
+        Kind_Vertex,
+        Kind_Index,
+        Kind_Skin,
+        Kind_Time,
+        Kind_Keyframe,
+        Kind_Instance,
+        Kind_Image,
+        Kind_Count
+    };
 
-	enum Compression
-	{
-		Compression_None = -1,
-		Compression_Attribute,
-		Compression_Index,
-		Compression_IndexSequence,
-	};
+    enum Compression
+    {
+        Compression_None = -1,
+        Compression_Attribute,
+        Compression_Index,
+        Compression_IndexSequence,
+    };
 
-	Kind kind;
-	StreamFormat::Filter filter;
-	Compression compression;
-	size_t stride;
-	int variant;
+    Kind kind;
+    StreamFormat::Filter filter;
+    Compression compression;
+    size_t stride;
+    int variant;
 
-	std::string data;
+    std::string data;
 
-	size_t bytes;
+    size_t bytes;
 };
 
 std::string getTempPrefix();
+std::string getTempPrefix(const char* fullPath);
 
 std::string getFullPath(const char* path, const char* base_path);
 std::string getFileName(const char* path);
@@ -390,6 +391,17 @@ void writeExtensions(std::string& json, const ExtensionInfo* extensions, size_t 
 void writeExtras(std::string& json, const cgltf_extras& extras);
 void writeScene(std::string& json, const cgltf_scene& scene, const std::string& roots);
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+int gltfpack(const char* input, const char* output, const char* report, struct Settings settings);
+int testGltfpack(const char* input, const char* output, const char* report, struct Settings settings);
+void saveImage(cgltf_image& image, int job_id);
+
+#ifdef __cplusplus
+}
+#endif
 /**
  * Copyright (c) 2016-2024 Arseny Kapoulkine
  *

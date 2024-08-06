@@ -15,8 +15,7 @@ var interface = {
 	},
 };
 
-gltfpack
-	.pack(args, interface)
+gltfpack.pack(args, interface)
 	.then(function (log) {
 		process.stdout.write(log);
 		process.exit(0);

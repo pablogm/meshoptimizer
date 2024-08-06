@@ -1,0 +1,1286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		98C51D1E9F19B947AAC87747 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 44345AC6FBA04D14930E526C /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				918C50A5E8D64922A66CBC09 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		C82C7062C25965B06134ECDB /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4618DE8EDD3F4D79B4C45FB4 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				DD4878B01C114A70E5EEEE7A /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				6D3F76D4027D449ABCCF2575 /* PBXTargetDependency */,
+				EC5FD7D5B5A34100B9ED4E7D /* PBXTargetDependency */,
+				B664089F7FEB4B18B2872DE9 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		F2AEE3FF17B4B8D02D86EB1E /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A445EFFBC07B40C28CAF3F30 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				09597384F3394BF8E63C0FD2 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		053B3447A4014F9284808419 /* spatialorder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 79103D1FAC1B4B8AA76829B3 /* spatialorder.cpp */; };
+		09AD85F1DCC740CFA5A92EA4 /* basisenc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10E8260834ED4C1B9FE5B74F /* basisenc.cpp */; settings = {COMPILER_FLAGS = "-I/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/basis_universal"; }; };
+		1703E685EA7F40E4A7CEC11A /* overdrawanalyzer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3FACDD9B6ACE448DB79225E5 /* overdrawanalyzer.cpp */; };
+		1B85EBC32EAA40A893BB1FEB /* node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52792E14D62E433093685770 /* node.cpp */; };
+		2C5C6F86783740A69A5E98B0 /* animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BB8A4F2D9AE4938BAA83328 /* animation.cpp */; };
+		2F4F73CA3B3C4B988CA774D4 /* material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC93EEA1CF7444D8A90C6968 /* material.cpp */; };
+		37589EAC47B9414C8BDBF346 /* parseobj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60E15186C0DB4ED9A1CFF718 /* parseobj.cpp */; };
+		3E400A35367A47E6BFE03241 /* image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B1183E680ED4F4294E250B9 /* image.cpp */; };
+		416D9D421CAF4A359F8A6B0A /* vcacheoptimizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA075426E395440F8054026C /* vcacheoptimizer.cpp */; };
+		444298E42E304E5FA9E74FD2 /* simplifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AFDE56C8F541442AACB4A4AB /* simplifier.cpp */; };
+		467C98DB60BD4642B7A27073 /* stripifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15AE4DDBA03D496BB81D0319 /* stripifier.cpp */; };
+		4D4E426A530F4C35B7C4B380 /* mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 173B8411984745C9B25B8532 /* mesh.cpp */; };
+		59F077CD9BB2421EBC16089F /* parsegltf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 825F1138E80440E0833C7482 /* parsegltf.cpp */; };
+		63FBD721F1EE4BA983ECF678 /* vfetchoptimizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7C3C39FED2E84738A45948A2 /* vfetchoptimizer.cpp */; };
+		6F1FC0F304F64A48BC6A6A27 /* json.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1A5416D213649EBBF9E3056 /* json.cpp */; };
+		74C26297C78343DEBB5CE279 /* allocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F770B83A27A4490A265C2E0 /* allocator.cpp */; };
+		78FCCD8981CE4408ACFED901 /* clusterizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 898FFEB797EE4C0D95D42200 /* clusterizer.cpp */; };
+		88A570815BB942CFA21A7CFB /* overdrawoptimizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50C5CC0B31514CB9B05DB0B3 /* overdrawoptimizer.cpp */; };
+		8A926711479C4C5880C59EAF /* parselib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 966692C515F64BB28FCAD2C0 /* parselib.cpp */; };
+		90762C878D594EA1A5C7572F /* vertexfilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35D657BED3B4433A82E8FC3E /* vertexfilter.cpp */; };
+		908D1E2E8A5741C19A71D31D /* basislib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 989D39C081FE43C9B6194BCA /* basislib.cpp */; settings = {COMPILER_FLAGS = "-I/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/basis_universal"; }; };
+		972BCB82320F43B88A84E5F9 /* vfetchanalyzer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25308075978C452EBC8FBCCD /* vfetchanalyzer.cpp */; };
+		9AA4F4847BD242D58C26821F /* gltfpack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1F42B12D79D4F148F6F442E /* gltfpack.cpp */; };
+		9FF109A5A1EA4837A96CCB68 /* indexgenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F5E43D794204FB49CB641EE /* indexgenerator.cpp */; };
+		A246698E49114010B9C4C44F /* quantization.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B4861574420F461595F43817 /* quantization.cpp */; };
+		BB20935735F8483FA91FAB56 /* indexcodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 436A1C1F428F48DC8A1898AB /* indexcodec.cpp */; };
+		C12A0A3F04B6482E86F40978 /* stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8068274E17B4A8C95EAAC0F /* stream.cpp */; };
+		C5334DEFB18542D58416E1B7 /* write.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26A52759F9734601881DEE5C /* write.cpp */; };
+		D828D7AED66146369E1A4423 /* vertexcodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB9D01A9A0DB404BB7C281A8 /* vertexcodec.cpp */; };
+		EC35945B5A97458F9C1BAC0D /* vcacheanalyzer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD3AE0715C7646A59259D7C6 /* vcacheanalyzer.cpp */; };
+		EE1F154B8F6240F68D682676 /* fileio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AC9D8A7F6D9C4BC1B70EBC60 /* fileio.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1120C4D2D752436187001631 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5277C6D163394DDFA6A30A38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C82C7062C25965B06134ECDB;
+			remoteInfo = ALL_BUILD;
+		};
+		1B07A0816D41492FA18F9CFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5277C6D163394DDFA6A30A38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 221D2A161DA9AC7DC7AAB169;
+			remoteInfo = gltfpack;
+		};
+		2A862C36F7A04DEE98B0321F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5277C6D163394DDFA6A30A38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80EEA1C7E79B6FE511E10277;
+			remoteInfo = meshoptimizer;
+		};
+		54FBD4DE4A2F46F8BC5F7D13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5277C6D163394DDFA6A30A38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80EEA1C7E79B6FE511E10277;
+			remoteInfo = meshoptimizer;
+		};
+		8203F4E58EC4457E8BBF74AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5277C6D163394DDFA6A30A38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2AEE3FF17B4B8D02D86EB1E;
+			remoteInfo = ZERO_CHECK;
+		};
+		AFABF7922EFE4F42BAB9A6EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5277C6D163394DDFA6A30A38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2AEE3FF17B4B8D02D86EB1E;
+			remoteInfo = ZERO_CHECK;
+		};
+		FEEC45D0E99E44EEA0106482 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5277C6D163394DDFA6A30A38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2AEE3FF17B4B8D02D86EB1E;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F770B83A27A4490A265C2E0 /* allocator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = allocator.cpp; path = src/allocator.cpp; sourceTree = SOURCE_ROOT; };
+		10E8260834ED4C1B9FE5B74F /* basisenc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = basisenc.cpp; path = gltf/basisenc.cpp; sourceTree = SOURCE_ROOT; };
+		15AE4DDBA03D496BB81D0319 /* stripifier.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stripifier.cpp; path = src/stripifier.cpp; sourceTree = SOURCE_ROOT; };
+		173B8411984745C9B25B8532 /* mesh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mesh.cpp; path = gltf/mesh.cpp; sourceTree = SOURCE_ROOT; };
+		25308075978C452EBC8FBCCD /* vfetchanalyzer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vfetchanalyzer.cpp; path = src/vfetchanalyzer.cpp; sourceTree = SOURCE_ROOT; };
+		26A52759F9734601881DEE5C /* write.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = write.cpp; path = gltf/write.cpp; sourceTree = SOURCE_ROOT; };
+		2BB8A4F2D9AE4938BAA83328 /* animation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = animation.cpp; path = gltf/animation.cpp; sourceTree = SOURCE_ROOT; };
+		3231F3C6871A4D8EB57019BD /* Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; lastKnownFileType = text.plist; name = Info.plist; path = "build-ios/build/CMakeFiles/gltfpack.dir/Info.plist"; sourceTree = SOURCE_ROOT; };
+		35D657BED3B4433A82E8FC3E /* vertexfilter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vertexfilter.cpp; path = src/vertexfilter.cpp; sourceTree = SOURCE_ROOT; };
+		3F11DCE48F5746F791E3C359 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3FACDD9B6ACE448DB79225E5 /* overdrawanalyzer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = overdrawanalyzer.cpp; path = src/overdrawanalyzer.cpp; sourceTree = SOURCE_ROOT; };
+		436A1C1F428F48DC8A1898AB /* indexcodec.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = indexcodec.cpp; path = src/indexcodec.cpp; sourceTree = SOURCE_ROOT; };
+		50C5CC0B31514CB9B05DB0B3 /* overdrawoptimizer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = overdrawoptimizer.cpp; path = src/overdrawoptimizer.cpp; sourceTree = SOURCE_ROOT; };
+		52792E14D62E433093685770 /* node.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = node.cpp; path = gltf/node.cpp; sourceTree = SOURCE_ROOT; };
+		60E15186C0DB4ED9A1CFF718 /* parseobj.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = parseobj.cpp; path = gltf/parseobj.cpp; sourceTree = SOURCE_ROOT; };
+		6F5E43D794204FB49CB641EE /* indexgenerator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = indexgenerator.cpp; path = src/indexgenerator.cpp; sourceTree = SOURCE_ROOT; };
+		79103D1FAC1B4B8AA76829B3 /* spatialorder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = spatialorder.cpp; path = src/spatialorder.cpp; sourceTree = SOURCE_ROOT; };
+		7C3C39FED2E84738A45948A2 /* vfetchoptimizer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vfetchoptimizer.cpp; path = src/vfetchoptimizer.cpp; sourceTree = SOURCE_ROOT; };
+		825F1138E80440E0833C7482 /* parsegltf.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = parsegltf.cpp; path = gltf/parsegltf.cpp; sourceTree = SOURCE_ROOT; };
+		898FFEB797EE4C0D95D42200 /* clusterizer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = clusterizer.cpp; path = src/clusterizer.cpp; sourceTree = SOURCE_ROOT; };
+		8B1183E680ED4F4294E250B9 /* image.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = image.cpp; path = gltf/image.cpp; sourceTree = SOURCE_ROOT; };
+		966692C515F64BB28FCAD2C0 /* parselib.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = parselib.cpp; path = gltf/parselib.cpp; sourceTree = SOURCE_ROOT; };
+		989D39C081FE43C9B6194BCA /* basislib.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = basislib.cpp; path = gltf/basislib.cpp; sourceTree = SOURCE_ROOT; };
+		A1F42B12D79D4F148F6F442E /* gltfpack.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gltfpack.cpp; path = gltf/gltfpack.cpp; sourceTree = SOURCE_ROOT; };
+		A92CA8240FBB45C7A9CFB491 /* meshoptimizer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = meshoptimizer.h; path = src/meshoptimizer.h; sourceTree = SOURCE_ROOT; };
+		AC93EEA1CF7444D8A90C6968 /* material.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = material.cpp; path = gltf/material.cpp; sourceTree = SOURCE_ROOT; };
+		AC9D8A7F6D9C4BC1B70EBC60 /* fileio.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fileio.cpp; path = gltf/fileio.cpp; sourceTree = SOURCE_ROOT; };
+		AD3AE0715C7646A59259D7C6 /* vcacheanalyzer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vcacheanalyzer.cpp; path = src/vcacheanalyzer.cpp; sourceTree = SOURCE_ROOT; };
+		AFDE56C8F541442AACB4A4AB /* simplifier.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = simplifier.cpp; path = src/simplifier.cpp; sourceTree = SOURCE_ROOT; };
+		B290009C362B4957BCE757F5 /* libmeshoptimizer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libmeshoptimizer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2CE40F80A8B4416BFF0C311 /* libgltfpack.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libgltfpack.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4861574420F461595F43817 /* quantization.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = quantization.cpp; path = src/quantization.cpp; sourceTree = SOURCE_ROOT; };
+		B697109A843A45C0865F0723 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B8068274E17B4A8C95EAAC0F /* stream.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stream.cpp; path = gltf/stream.cpp; sourceTree = SOURCE_ROOT; };
+		CB9D01A9A0DB404BB7C281A8 /* vertexcodec.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vertexcodec.cpp; path = src/vertexcodec.cpp; sourceTree = SOURCE_ROOT; };
+		CE3AD4DBEDC54224887C46A4 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; lastKnownFileType = text.plist; name = Info.plist; path = "build-ios/build/CMakeFiles/meshoptimizer.dir/Info.plist"; sourceTree = SOURCE_ROOT; };
+		E1A5416D213649EBBF9E3056 /* json.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = json.cpp; path = gltf/json.cpp; sourceTree = SOURCE_ROOT; };
+		E7D5EE878DEF4E02802A1E56 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		EA075426E395440F8054026C /* vcacheoptimizer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vcacheoptimizer.cpp; path = src/vcacheoptimizer.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E920C605668401BB44A639A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D439C2741A564BDBBA9AFD02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01F10DCB7CAB40198E615019 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		137C3DB331FC44EBA7B16AE8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3231F3C6871A4D8EB57019BD /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1A5D5236EE694DC092EC5312 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE3AD4DBEDC54224887C46A4 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		24CDBA11F6CF4FC9AA99E495 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				E1C8E2AE5543495BB6D70BC9 /* CMake Rules */,
+				3F11DCE48F5746F791E3C359 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		3D3E103A234E4E9C9DBD9A3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2CE40F80A8B4416BFF0C311 /* libgltfpack.a */,
+				B290009C362B4957BCE757F5 /* libmeshoptimizer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4EB4C28FC02041B18BD1466B /* meshoptimizer */ = {
+			isa = PBXGroup;
+			children = (
+				55F134D0DA9A402FBF08E3F4 /* Header Files */,
+				BF49B0D67CC9480D97E5028A /* Source Files */,
+				1A5D5236EE694DC092EC5312 /* Resources */,
+				B697109A843A45C0865F0723 /* CMakeLists.txt */,
+			);
+			name = meshoptimizer;
+			sourceTree = "<group>";
+		};
+		55F134D0DA9A402FBF08E3F4 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				A92CA8240FBB45C7A9CFB491 /* meshoptimizer.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		60970E02D9704E1A9066CEF9 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BB8A4F2D9AE4938BAA83328 /* animation.cpp */,
+				10E8260834ED4C1B9FE5B74F /* basisenc.cpp */,
+				989D39C081FE43C9B6194BCA /* basislib.cpp */,
+				AC9D8A7F6D9C4BC1B70EBC60 /* fileio.cpp */,
+				A1F42B12D79D4F148F6F442E /* gltfpack.cpp */,
+				8B1183E680ED4F4294E250B9 /* image.cpp */,
+				E1A5416D213649EBBF9E3056 /* json.cpp */,
+				AC93EEA1CF7444D8A90C6968 /* material.cpp */,
+				173B8411984745C9B25B8532 /* mesh.cpp */,
+				52792E14D62E433093685770 /* node.cpp */,
+				825F1138E80440E0833C7482 /* parsegltf.cpp */,
+				966692C515F64BB28FCAD2C0 /* parselib.cpp */,
+				60E15186C0DB4ED9A1CFF718 /* parseobj.cpp */,
+				B8068274E17B4A8C95EAAC0F /* stream.cpp */,
+				26A52759F9734601881DEE5C /* write.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		64E3771785A541F8B5AE6A53 /* gltfpack */ = {
+			isa = PBXGroup;
+			children = (
+				60970E02D9704E1A9066CEF9 /* Source Files */,
+				137C3DB331FC44EBA7B16AE8 /* Resources */,
+				E7D5EE878DEF4E02802A1E56 /* CMakeLists.txt */,
+			);
+			name = gltfpack;
+			sourceTree = "<group>";
+		};
+		BF49B0D67CC9480D97E5028A /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F770B83A27A4490A265C2E0 /* allocator.cpp */,
+				898FFEB797EE4C0D95D42200 /* clusterizer.cpp */,
+				436A1C1F428F48DC8A1898AB /* indexcodec.cpp */,
+				6F5E43D794204FB49CB641EE /* indexgenerator.cpp */,
+				3FACDD9B6ACE448DB79225E5 /* overdrawanalyzer.cpp */,
+				50C5CC0B31514CB9B05DB0B3 /* overdrawoptimizer.cpp */,
+				B4861574420F461595F43817 /* quantization.cpp */,
+				AFDE56C8F541442AACB4A4AB /* simplifier.cpp */,
+				79103D1FAC1B4B8AA76829B3 /* spatialorder.cpp */,
+				15AE4DDBA03D496BB81D0319 /* stripifier.cpp */,
+				AD3AE0715C7646A59259D7C6 /* vcacheanalyzer.cpp */,
+				EA075426E395440F8054026C /* vcacheoptimizer.cpp */,
+				CB9D01A9A0DB404BB7C281A8 /* vertexcodec.cpp */,
+				35D657BED3B4433A82E8FC3E /* vertexfilter.cpp */,
+				25308075978C452EBC8FBCCD /* vfetchanalyzer.cpp */,
+				7C3C39FED2E84738A45948A2 /* vfetchoptimizer.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		C8E4310936A64447919D9FCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CECE4BB2B8794C4A82ECDD76 = {
+			isa = PBXGroup;
+			children = (
+				4EB4C28FC02041B18BD1466B /* meshoptimizer */,
+				64E3771785A541F8B5AE6A53 /* gltfpack */,
+				24CDBA11F6CF4FC9AA99E495 /* ALL_BUILD */,
+				3D3E103A234E4E9C9DBD9A3D /* Products */,
+				C8E4310936A64447919D9FCF /* Frameworks */,
+				01F10DCB7CAB40198E615019 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		E1C8E2AE5543495BB6D70BC9 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		221D2A161DA9AC7DC7AAB169 /* gltfpack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C07BF23426E7407FB9534DE2 /* Build configuration list for PBXNativeTarget "gltfpack" */;
+			buildPhases = (
+				866C356CEFD04008841DFF4C /* Sources */,
+				3E920C605668401BB44A639A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				180467E251F24C738D4F2836 /* PBXTargetDependency */,
+				4D7C051AD3E446DA93D4D0B3 /* PBXTargetDependency */,
+			);
+			name = gltfpack;
+			productName = gltfpack;
+			productReference = B2CE40F80A8B4416BFF0C311 /* libgltfpack.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		80EEA1C7E79B6FE511E10277 /* meshoptimizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6191DF6B8124FDBB8EB90D2 /* Build configuration list for PBXNativeTarget "meshoptimizer" */;
+			buildPhases = (
+				CA480117DBDE45F3BE77654D /* Sources */,
+				D439C2741A564BDBBA9AFD02 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E6DC79ACBA749D99E3E3415 /* PBXTargetDependency */,
+			);
+			name = meshoptimizer;
+			productName = meshoptimizer;
+			productReference = B290009C362B4957BCE757F5 /* libmeshoptimizer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5277C6D163394DDFA6A30A38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 7FE323A8E74F4D5EA46BCA00 /* Build configuration list for PBXProject "meshoptimizer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CECE4BB2B8794C4A82ECDD76;
+			projectDirPath = "/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer";
+			projectRoot = "";
+			targets = (
+				C82C7062C25965B06134ECDB /* ALL_BUILD */,
+				F2AEE3FF17B4B8D02D86EB1E /* ZERO_CHECK */,
+				221D2A161DA9AC7DC7AAB169 /* gltfpack */,
+				98C51D1E9F19B947AAC87747 /* install */,
+				80EEA1C7E79B6FE511E10277 /* meshoptimizer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09597384F3394BF8E63C0FD2 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+				"/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build/CMakeFiles/ZERO_CHECK",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build\n  make -f /Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build\n  make -f /Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build\n  make -f /Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build\n  make -f /Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build/CMakeScripts/ReRunCMake.make\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build\n  /opt/homebrew/Cellar/cmake/3.30.0/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build\n  /opt/homebrew/Cellar/cmake/3.30.0/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build\n  /opt/homebrew/Cellar/cmake/3.30.0/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build\n  /opt/homebrew/Cellar/cmake/3.30.0/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DD4878B01C114A70E5EEEE7A /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+				"/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build/CMakeFiles/ALL_BUILD",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build\n  echo Build\\ all\\ projects\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		866C356CEFD04008841DFF4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C5C6F86783740A69A5E98B0 /* animation.cpp in Sources */,
+				09AD85F1DCC740CFA5A92EA4 /* basisenc.cpp in Sources */,
+				908D1E2E8A5741C19A71D31D /* basislib.cpp in Sources */,
+				EE1F154B8F6240F68D682676 /* fileio.cpp in Sources */,
+				9AA4F4847BD242D58C26821F /* gltfpack.cpp in Sources */,
+				3E400A35367A47E6BFE03241 /* image.cpp in Sources */,
+				6F1FC0F304F64A48BC6A6A27 /* json.cpp in Sources */,
+				2F4F73CA3B3C4B988CA774D4 /* material.cpp in Sources */,
+				4D4E426A530F4C35B7C4B380 /* mesh.cpp in Sources */,
+				1B85EBC32EAA40A893BB1FEB /* node.cpp in Sources */,
+				59F077CD9BB2421EBC16089F /* parsegltf.cpp in Sources */,
+				8A926711479C4C5880C59EAF /* parselib.cpp in Sources */,
+				37589EAC47B9414C8BDBF346 /* parseobj.cpp in Sources */,
+				C12A0A3F04B6482E86F40978 /* stream.cpp in Sources */,
+				C5334DEFB18542D58416E1B7 /* write.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA480117DBDE45F3BE77654D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74C26297C78343DEBB5CE279 /* allocator.cpp in Sources */,
+				78FCCD8981CE4408ACFED901 /* clusterizer.cpp in Sources */,
+				BB20935735F8483FA91FAB56 /* indexcodec.cpp in Sources */,
+				9FF109A5A1EA4837A96CCB68 /* indexgenerator.cpp in Sources */,
+				1703E685EA7F40E4A7CEC11A /* overdrawanalyzer.cpp in Sources */,
+				88A570815BB942CFA21A7CFB /* overdrawoptimizer.cpp in Sources */,
+				A246698E49114010B9C4C44F /* quantization.cpp in Sources */,
+				444298E42E304E5FA9E74FD2 /* simplifier.cpp in Sources */,
+				053B3447A4014F9284808419 /* spatialorder.cpp in Sources */,
+				467C98DB60BD4642B7A27073 /* stripifier.cpp in Sources */,
+				EC35945B5A97458F9C1BAC0D /* vcacheanalyzer.cpp in Sources */,
+				416D9D421CAF4A359F8A6B0A /* vcacheoptimizer.cpp in Sources */,
+				D828D7AED66146369E1A4423 /* vertexcodec.cpp in Sources */,
+				90762C878D594EA1A5C7572F /* vertexfilter.cpp in Sources */,
+				972BCB82320F43B88A84E5F9 /* vfetchanalyzer.cpp in Sources */,
+				63FBD721F1EE4BA983ECF678 /* vfetchoptimizer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		180467E251F24C738D4F2836 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2AEE3FF17B4B8D02D86EB1E /* ZERO_CHECK */;
+			targetProxy = AFABF7922EFE4F42BAB9A6EF /* PBXContainerItemProxy */;
+		};
+		4D7C051AD3E446DA93D4D0B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80EEA1C7E79B6FE511E10277 /* meshoptimizer */;
+			targetProxy = 54FBD4DE4A2F46F8BC5F7D13 /* PBXContainerItemProxy */;
+		};
+		5E6DC79ACBA749D99E3E3415 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2AEE3FF17B4B8D02D86EB1E /* ZERO_CHECK */;
+			targetProxy = FEEC45D0E99E44EEA0106482 /* PBXContainerItemProxy */;
+		};
+		6D3F76D4027D449ABCCF2575 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2AEE3FF17B4B8D02D86EB1E /* ZERO_CHECK */;
+			targetProxy = 8203F4E58EC4457E8BBF74AC /* PBXContainerItemProxy */;
+		};
+		918C50A5E8D64922A66CBC09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C82C7062C25965B06134ECDB /* ALL_BUILD */;
+			targetProxy = 1120C4D2D752436187001631 /* PBXContainerItemProxy */;
+		};
+		B664089F7FEB4B18B2872DE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 221D2A161DA9AC7DC7AAB169 /* gltfpack */;
+			targetProxy = 1B07A0816D41492FA18F9CFD /* PBXContainerItemProxy */;
+		};
+		EC5FD7D5B5A34100B9ED4E7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80EEA1C7E79B6FE511E10277 /* meshoptimizer */;
+			targetProxy = 2A862C36F7A04DEE98B0321F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0FAB8E13A31C41168A96B11B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				"ARCHS[sdk=iphoneos*]" = arm64;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				ENABLE_BITCODE = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build/build";
+				"VALID_ARCHS[sdk=iphoneos*]" = arm64;
+			};
+			name = RelWithDebInfo;
+		};
+		1C5F4423CD204781BFFAD704 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-Wall",
+					"-Wextra",
+					"-Wshadow",
+					"-Wno-missing-field-initializers",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = meshoptimizer;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build/build/meshoptimizer.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		245A0119B38F431283293E91 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		3452F7ED8EDE400BB9BBEBC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		38CAF3C6763C4061B816FF25 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		463048F302794244B6C028FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		4A9C6E75D7664A578D593909 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				"ARCHS[sdk=iphoneos*]" = arm64;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				ENABLE_BITCODE = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build/build";
+				"VALID_ARCHS[sdk=iphoneos*]" = arm64;
+			};
+			name = Release;
+		};
+		4FD47A2818F040E29B42F1BE /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		677C784353D543F0BEC4E41D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build/RelWithDebInfo${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					WITH_BASISU,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer",
+					"/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/src",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"-Wall",
+					"-Wextra",
+					"-Wshadow",
+					"-Wno-missing-field-initializers",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gltfpack;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build/build/gltfpack.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		6B8014B59411468F994337E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		7A50FEFD7AAD4EA5BA0B3A56 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					WITH_BASISU,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer",
+					"/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/src",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"-Wall",
+					"-Wextra",
+					"-Wshadow",
+					"-Wno-missing-field-initializers",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gltfpack;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build/build/gltfpack.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		8771F4D7E9984929B3F02BE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build/Debug${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-Wshadow",
+					"-Wno-missing-field-initializers",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = meshoptimizer;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build/build/meshoptimizer.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		8C36A703A71342FEA33839FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		9AD6796719064523B1AAC6A3 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		A02F6F6F020646498F8694B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build/Release${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					WITH_BASISU,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer",
+					"/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/src",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++11'",
+					"-Wall",
+					"-Wextra",
+					"-Wshadow",
+					"-Wno-missing-field-initializers",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gltfpack;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build/build/gltfpack.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		A61BA5FC0FFD4017B02E3078 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				"ARCHS[sdk=iphoneos*]" = arm64;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				ENABLE_BITCODE = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build/build";
+				"VALID_ARCHS[sdk=iphoneos*]" = arm64;
+			};
+			name = MinSizeRel;
+		};
+		C29C5701BDC14444B2C213ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build/Release${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-Wall",
+					"-Wextra",
+					"-Wshadow",
+					"-Wno-missing-field-initializers",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = meshoptimizer;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build/build/meshoptimizer.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		C9E5DFDA1BF44567A2C25854 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build/Debug${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					WITH_BASISU,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer",
+					"/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/src",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"'-std=gnu++11'",
+					"-Wall",
+					"-Wextra",
+					"-Wshadow",
+					"-Wno-missing-field-initializers",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gltfpack;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build/build/gltfpack.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		D01A582565924273BD4222E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				"ARCHS[sdk=iphoneos*]" = arm64;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				ENABLE_BITCODE = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.0.sdk;
+				SYMROOT = "/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build/build";
+				"VALID_ARCHS[sdk=iphoneos*]" = arm64;
+			};
+			name = Debug;
+		};
+		D19D90806F004A318F6FE4F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		DA2E93E1287F44F998935303 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		DA771FF60D0049D4B8741237 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		DB840A75BFBE4A3A84BA0D4C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		ECBFAD398CC244978506347B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build/MinSizeRel${EFFECTIVE_PLATFORM_NAME}";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-Wall",
+					"-Wextra",
+					"-Wshadow",
+					"-Wno-missing-field-initializers",
+				);
+				OTHER_LIBTOOLFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = meshoptimizer;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/build-ios/build/build/meshoptimizer.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44345AC6FBA04D14930E526C /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D19D90806F004A318F6FE4F8 /* Debug */,
+				3452F7ED8EDE400BB9BBEBC0 /* Release */,
+				DB840A75BFBE4A3A84BA0D4C /* MinSizeRel */,
+				38CAF3C6763C4061B816FF25 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4618DE8EDD3F4D79B4C45FB4 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA2E93E1287F44F998935303 /* Debug */,
+				6B8014B59411468F994337E9 /* Release */,
+				245A0119B38F431283293E91 /* MinSizeRel */,
+				4FD47A2818F040E29B42F1BE /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7FE323A8E74F4D5EA46BCA00 /* Build configuration list for PBXProject "meshoptimizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D01A582565924273BD4222E5 /* Debug */,
+				4A9C6E75D7664A578D593909 /* Release */,
+				A61BA5FC0FFD4017B02E3078 /* MinSizeRel */,
+				0FAB8E13A31C41168A96B11B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A445EFFBC07B40C28CAF3F30 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C36A703A71342FEA33839FF /* Debug */,
+				463048F302794244B6C028FC /* Release */,
+				9AD6796719064523B1AAC6A3 /* MinSizeRel */,
+				DA771FF60D0049D4B8741237 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C07BF23426E7407FB9534DE2 /* Build configuration list for PBXNativeTarget "gltfpack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9E5DFDA1BF44567A2C25854 /* Debug */,
+				A02F6F6F020646498F8694B8 /* Release */,
+				7A50FEFD7AAD4EA5BA0B3A56 /* MinSizeRel */,
+				677C784353D543F0BEC4E41D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F6191DF6B8124FDBB8EB90D2 /* Build configuration list for PBXNativeTarget "meshoptimizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8771F4D7E9984929B3F02BE5 /* Debug */,
+				C29C5701BDC14444B2C213ED /* Release */,
+				ECBFAD398CC244978506347B /* MinSizeRel */,
+				1C5F4423CD204781BFFAD704 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5277C6D163394DDFA6A30A38 /* Project object */;
+}

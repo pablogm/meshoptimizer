@@ -1,0 +1,6 @@
+dependencies: \
+  /Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/gltf/parseobj.cpp \
+  /Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/gltf/gltfpack.h \
+  /Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/gltf/../extern/cgltf.h \
+  /Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/gltf/../extern/fast_obj.h \
+  /Users/pablogm/Documents/Developer/Genies/Github/genies-naf/examples/local_lods/iOS/Meshoptimizer/meshoptimizer/gltf/../src/meshoptimizer.h

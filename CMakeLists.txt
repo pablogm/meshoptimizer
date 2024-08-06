@@ -105,9 +105,10 @@ if(MESHOPT_BUILD_DEMO)
 endif()
 
 if(MESHOPT_BUILD_GLTFPACK)
-    add_executable(gltfpack ${GLTF_SOURCES})
+    add_library(gltfpack STATIC ${GLTF_SOURCES})
     set_target_properties(gltfpack PROPERTIES CXX_STANDARD 11)
     target_link_libraries(gltfpack meshoptimizer)
+    target_include_directories(gltfpack PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
     list(APPEND TARGETS gltfpack)
 
     if(MESHOPT_BUILD_SHARED_LIBS)
@@ -166,3 +167,4 @@ install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/meshoptimizerConfigVersion.cmake
     COMPONENT meshoptimizer
     DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/meshoptimizer)
+
