@@ -17,6 +17,8 @@
 
 #include "gltfpack.h"
 
+#include <opencv2/opencv.hpp>
+
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
@@ -116,6 +118,44 @@ static const char* prepareEncode(basisu::basis_compressor_params& params, const 
 
     temp_input = temp_prefix + mimeExtension(mime_type.c_str());
     temp_output = temp_prefix + ".ktx2";
+    
+    /// [START] Tests
+    int channels = 4; // 3 for RGB, 4 for RGBA
+
+    // Convert std::string to a vector of unsigned char for OpenCV
+    std::vector<unsigned char> img_data_vector(img_data.begin(), img_data.end());
+
+    // Decode the compressed image data
+    cv::Mat img_mat = cv::imdecode(img_data_vector, cv::IMREAD_UNCHANGED);
+    if (img_mat.empty()) {
+        return "error decoding image";
+    }
+
+    // Downsample the image
+    cv::Mat downsampled_img;
+    cv::resize(img_mat, downsampled_img, cv::Size(), 0.5, 0.5, cv::INTER_LINEAR); // Downsample to half the size
+
+    // Upsample the image back to original size
+    cv::Mat upsampled_img;
+    cv::resize(downsampled_img, upsampled_img, img_mat.size(), 0, 0, cv::INTER_LINEAR);
+
+    // Apply Gaussian Blur
+    cv::GaussianBlur(upsampled_img, upsampled_img, cv::Size(5, 5), 0);
+
+    // Encode the image back to PNG format with a faster compression level
+    std::vector<int> compression_params;
+    compression_params.push_back(cv::IMWRITE_PNG_COMPRESSION);
+    compression_params.push_back(6); // Lower compression level for faster encoding
+
+    // Encode the image back to PNG format
+    std::vector<unsigned char> output_data;
+    if (!cv::imencode(".png", upsampled_img, output_data, compression_params)) {
+        return "error encoding image";
+    }
+
+    // Convert the processed data back to std::string
+    img_data = std::string(output_data.begin(), output_data.end());
+    /// [END] Tests
 
     if (!writeFile(temp_input.c_str(), img_data))
         return "error writing temporary file";
@@ -148,7 +188,9 @@ void encodeImages(std::string* encoded, const cgltf_data* data, const std::vecto
         
         int jobId = arc4random_uniform(1000000);
         params[i].job_id = jobId;
-        saveImage(image, jobId);
+        
+        // Save image prior to encoding - DEBUG
+        // saveImage(image, jobId);
         
         ImageInfo info = images[i];
 
